@@ -1,19 +1,28 @@
-import React from 'react';
+import {React, useState} from 'react';
 import './App.css';
-import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Login from './components/login page/Login';
-import Land from './components/Land/Land';
+import Home from './components/Home/Home';
+// import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// import Login from './components/login page/Login';
+// import Land from './components/Land/Land';
 
 
 function App() {
+  // const [user, setUser] = useState(JSON.parse(localStorage.getItem('user')));
   return (
     <div className="App">
-      <Router>
+      {/* <Router>
         <Switch>
           <Route exact path="/" component={Land} />
           <Route exact path="/login" component={Login} />
         </Switch>
-      </Router>
+      </Router> */}
+      {/* {
+        !user ?
+        <Login setUser={setUser} />
+        :
+        <Home />
+      } */}
+      <Home />
     </div>
   );
 }
